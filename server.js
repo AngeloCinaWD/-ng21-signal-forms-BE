@@ -1,11 +1,17 @@
 // importiamo express dal modulo express
 import express from 'express';
+// importiamo il modulo cors
+import cors from 'cors';
 
 // creo l'applicazione
 const app = express();
 
 // creo la porta
 const port = 3002;
+
+// middleware gestione cors
+// va abilitato il cors perchè FE e BE sono eseguiti su 2 host diversi ed il browser blocca la chiamata per sicurezza
+app.use(cors());
 
 // creo gli utenti già presenti e che quindi non sarà possibile prendere
 // passando un array con valori duplicati e creando da questo un Set questi verranno rimossi (ci sarà un solo mario)
