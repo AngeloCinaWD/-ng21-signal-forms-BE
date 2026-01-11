@@ -8,3 +8,4 @@ This project was generated using Node 24.12 e npm 11.6.2
 - initialize npm in project folder (npm init -y)
 - install express (npm install express)
 - installare il modulo cors per il middleware cors (npm install cors)
+- ricordarsi di aggiungere il .gitignore per /node_modules
